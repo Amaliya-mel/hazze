@@ -1812,32 +1812,3 @@ ol {
 		font-size: 22px;
 	}
 }
-
-/* Responsive hardening for the published static site. */
-html, body { overflow-x: hidden; }
-img, svg { max-width: 100%; height: auto; }
-.container, .row > *, .header-section .container, .hero-section .container { min-width: 0; }
-.header-section .logo img { max-height: 42px; width: auto; }
-.primary-btn, .site-btn, .slicknav_nav a { min-height: 44px; display: inline-flex; align-items: center; }
-
-@media only screen and (max-width: 767px) {
-  .header-section { position: relative; z-index: 20; }
-  .header-section .logo { padding: 16px 0; }
-  .hero-section { min-height: 560px; background-position: center; }
-  .hero-section .hs-text { padding: 90px 0 80px; }
-  .hero-section .hs-text h2 { font-size: clamp(42px, 14vw, 66px); line-height: 1; }
-  .section-title h2 { font-size: clamp(30px, 9vw, 45px); line-height: 1.08; }
-  .portfolio-item.large-item { height: 300px; }
-  .portfolio-item { min-height: 240px; }
-  .footer-widget { margin-bottom: 24px; }
-}
-
-@media only screen and (max-width: 479px) {
-  .container { padding-left: 20px; padding-right: 20px; }
-  .hero-section { min-height: 510px; }
-  .hero-section .hs-text { padding: 72px 0 58px; }
-  .hero-section .hs-text h2 { font-size: 42px; }
-  .spad { padding-top: 70px; padding-bottom: 70px; }
-  .portfolio-item, .portfolio-item.large-item { min-height: 210px; height: 210px; }
-  .bd-text .bd-quote { padding: 28px 22px; }
-}
